@@ -18,10 +18,12 @@
   },
   "homepage": "https://github.com/arpanpathak/ask-anything-chatbot#readme",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "esm": "^3.2.25",
     "express": "^4.17.1",
     "ibm-watson": "^5.4.0",
     "neo4j-driver": "^4.0.1",
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.2",
+    "socket.io": "^2.3.0"
   }
 }

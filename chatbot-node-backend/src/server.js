@@ -9,6 +9,10 @@
  */
 import express from "express";
 import router from "./router-controller/router";
+import dotenv from "dotenv";
+
+// Replicate environment from dotenv file to current server process by calling config method
+dotenv.config();
 
 // Creating instant of express server
 const app = express();
@@ -20,4 +24,7 @@ const app = express();
  // Injecting route controller middlewere
 app.use(router);
 
-app.listen(process.env.PORT || 5000);
+app.listen(
+    process.env.PORT || 5000 , 
+    ()=> console.log(`Server running on port ${process.env.PORT}`)
+);

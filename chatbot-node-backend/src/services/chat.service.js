@@ -5,6 +5,8 @@
  * @author Arpan
  */
 
+import discoveryClient from "../../config/discovery.client.config";
+
 class ChatServices {
     
     /***
